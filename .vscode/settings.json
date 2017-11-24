@@ -1,0 +1,7 @@
+{
+    "python.unitTest.pyTestArgs": [
+        "."
+    ],
+    "python.unitTest.pyTestEnabled": true,
+    "python.pythonPath": "C:\\Users\\XPS 15-9550\\Envs\\AirQuality\\Scripts\\python.exe"
+}
