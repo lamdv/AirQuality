@@ -2,14 +2,14 @@
 """ ELM Implementation of Neural Network
 """
 import numpy as np
-import dataPrepare
+import data_prepare
 
 
 inpFile = "./Satellite_data_download/ref.csv"
 outFile = "./Satellite_data_download/PRSA_data_2010.1.1-2014.12.31.csv"
 
-A = dataPrepare.inp(inpFile)
-y = dataPrepare.out(outFile)
+A = data_prepare.inp(inpFile)
+y = data_prepare.out(outFile)
 
 # sigmoid activation network
 
@@ -54,7 +54,7 @@ def elm(seed=None, activ="sigmoid", width=1000):
     return err
 
 
-[A, y] = dataPrepare.matching(A, y)
+[A, y] = data_prepare.matching(A, y)
 
 # least square learning on the output weight of random layer
 # w = np.linalg.lstsq(A, y)[0]
